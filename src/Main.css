@@ -1,0 +1,194 @@
+/* @media screen and (min-width: 1618px) {
+  .Boxs {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+} */
+.Layout {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: seashell;
+  width: 100%;
+  height: 100%;
+}
+
+.Header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 6em;
+  background-color: darksalmon;
+}
+
+.Title {
+  color: white;
+  padding-left: 5%;
+  padding-top: 0.2em;
+}
+
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  max-width: 100%;
+  max-height: 100%;
+  padding-top: 9em;
+  padding-left: 8em;
+  padding-bottom: 5em;
+}
+
+.Boxs {
+  display: grid;
+  justify-self: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-column-gap: 2em;
+  grid-row-gap: 1em;
+  width: 100%;
+  height: 100%;
+}
+
+.list_item {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  line-height: 180%;
+  padding: 0 0 0em 2em;
+  border: 5px solid white;
+  border-radius: 0 0 50px 0;
+  background-color: rgb(198, 221, 249);
+  width: 20em;
+  height: 14em;
+  border-style: double;
+  box-shadow: thistle 5px 3px 10px;
+}
+
+.CardButtons {
+  display: flex;
+  align-self: flex-end;
+  position: row;
+  border: none;
+  background: none;
+  margin-right: 1em;
+  margin-top: 1em;
+}
+
+.Arrow_Update {
+  display: none;
+  text-align: center;
+  position: absolute;
+  width: 4em;
+  padding: 0.4em;
+  left: 15.7em;
+  top: -2.5em;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  background: rgb(148, 159, 171, 0.9);
+  color: #fff;
+  font-size: 16px;
+}
+
+.Arrow_Update:after {
+  position: absolute;
+  bottom: -50%;
+  left: 40%;
+  width: 0;
+  height: 0;
+  margin-left: -0.5em;
+  border: solid transparent;
+  border-color: rgba(51, 51, 51, 0);
+  border-top-color: rgb(148, 159, 171, 0.9);
+  border-width: 10px;
+  pointer-events: none;
+  content: ' ';
+}
+
+.UpdateButton:hover + .Arrow_Update {
+  display: block;
+}
+
+.UpdateButton {
+  padding-right: 5px;
+}
+
+.UpdateButton:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
+.Arrow_Delete {
+  display: none;
+  text-align: center;
+  position: absolute;
+  width: 4em;
+  padding: 0.4em;
+  top: -3.5em;
+  left: 17.8em;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  background: rgb(148, 159, 171, 0.9);
+  color: #fff;
+  font-size: 16px;
+}
+
+.Arrow_Delete:after {
+  position: absolute;
+  bottom: -50%;
+  left: 40%;
+  width: 0;
+  height: 0;
+  margin-left: -0.5em;
+  border: solid transparent;
+  border-color: rgba(51, 51, 51, 0);
+  border-top-color: rgb(148, 159, 171, 0.9);
+  border-width: 10px;
+  pointer-events: none;
+  content: ' ';
+}
+
+.DeleteButton:hover + .Arrow_Delete {
+  display: block;
+}
+
+.DeleteButton {
+  padding-left: 5px;
+  padding-right: 10px;
+}
+
+.DeleteButton:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+  color: red;
+}
+
+.UnderLine {
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+}
+
+.TextBox {
+  display: block; /* 블록태그로 만들어준다 */
+  text-overflow: ellipsis; /* 말줄임 css */
+  white-space: nowrap; /*글자를 한줄로 모아준다*/
+  overflow: hidden;
+}
+
+.ExampleStyle {
+  color: royalblue;
+  display: block; /* 블록태그로 만들어준다 */
+  text-overflow: ellipsis; /* 말줄임 css */
+  white-space: nowrap; /*글자를 한줄로 모아준다*/
+  overflow: hidden;
+}
+
+.MainButtons {
+  position: -webkit-sticky;
+  position: sticky;
+  bottom: 3em;
+  right: 4em;
+}

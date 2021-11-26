@@ -1,0 +1,14 @@
+.Header {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 6em;
+  background-color: darksalmon;
+}
+
+.Title {
+  color: white;
+  padding-left: 5%;
+  padding-top: 0.2em;
+}
